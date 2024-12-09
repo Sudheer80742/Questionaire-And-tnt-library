@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ODM',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.ODM.v1" Alias="SAP__ODM"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../../rbxcrm/sm_sb_stdexecution/$metadata">
+        <edmx:Include Namespace="SM_SB_STDEXECUTION" Alias="SAP"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="com.sap.rbxcrm.sm_sb_stdexecution_van.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogType/to_SAEFormItem_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogHeaderType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogHeaderType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogHeaderType/to_AELReport_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogHeaderType/to_SAEForm_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogHeaderType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogReportType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogReportType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogReportType/to_AELreportattachment_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogReportAttType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AdverseEventLogReportAttType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AuditLogType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.AuditLogType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SEATTACHMENTType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SEATTACHMENTType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.DrugDiaryType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.DrugDiaryType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.DeviationLogType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.DeviationLogType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.DeviationLogType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.EfficacySEType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.EfficacySEType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.ICFattachmentsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.ICFattachmentsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.MedicalSurgicalHistoryType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.MedicalSurgicalHistoryType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PRODType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PRODType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PrescreeningParamItemsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PrescreeningParamItemsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PrescreeningParamItemsType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PrescreeningDetailsType/CountryText">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PrescreeningDetailsType/ProtocolStudyIdText">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PrescreeningDetailsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.PrescreeningDetailsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.QueryLogType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.QueryLogType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyQuestionnaireResponseType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyQuestionnaireResponseType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.QuestionnaireCodeMasterType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.QuestionnaireCodeMasterType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.QuestionResponseType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.QuestionResponseType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormHeaderType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormHeaderType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormHeaderType/to_SeriousnessCriteriaDetails_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormHeaderType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormItemType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormItemType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SAEFormItemType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectBySiteType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectBySiteType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectBySiteType/to_efficacySE_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectBySiteType/to_ICFattachments_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectBySiteType/to_PROD_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectBySiteType/to_SubjectVisitCalendar_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectBySiteType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SeriousnessCriteriaDetailsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SeriousnessCriteriaDetailsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectDoseByVisitType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectDoseByVisitType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyInfoType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyInfoType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyInfoType/to_StudyProtocolAttachment_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyInfoType/SponsorApproval">
+                <Annotation Term="UI.MultiLineText"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyInfoType/InvestigatorStatement">
+                <Annotation Term="UI.MultiLineText"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyInfoType/ConfidentialityStatement">
+                <Annotation Term="UI.MultiLineText"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyInfoType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SEClinicalStatusType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SEClinicalStatusType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SEClinicalStatusType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionDetailsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionDetailsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionDetailsType/to_AdverseEventLog_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionDetailsType/to_StudyExeDtlsAttachment_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionDetailsType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyProcedureMasterType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyProcedureMasterType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyProcedureParamsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyProcedureParamsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyProcedureParamsType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectStudyHistoryType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectStudyHistoryType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectStudyHistoryType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectTestNotPerformedType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectTestNotPerformedType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectTestNotPerformedType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudySubjectTestResultsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudySubjectTestResultsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudySubjectTestResultsType/to_SEATTACHMENT_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyProtocolAttachmentType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyProtocolAttachmentType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExeDtlsAttachmentType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExeDtlsAttachmentType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_AdverseEventLogHeader_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_AuditLog_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_DeviationLog_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_DrugDiary_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_MedicalSurgicalHistory_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_QueryLog_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_Questionnaire_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_QuestionResponse_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_SEClinicalStatus_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_SeriousAdverseEventForm_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_StudyConcomitantMedication_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_StudyExecutionDetails_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_StudySubjectTestResults_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_SubjectClinicalIncExcStatus_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_SubjectClinicalStatusDetails_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_SubjectDoseByVisit_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_SubjectStudyHistory_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType/to_Subjecttestsnotperformed_oc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.StudyExecutionHeaderType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectClinicalIncExcStatusType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectClinicalIncExcStatusType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectConcomitantMedicationsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectConcomitantMedicationsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectConcomitantMedicationsType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectClinicalStatusDetailsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectClinicalStatusDetailsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectClinicalStatusDetailsType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectVisitCalendarType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.SubjectVisitCalendarType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.TestStandardResultsType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.TestStandardResultsType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.TestStandardResultsType">
+                <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_F4_ENRMT_SITEType/Prsid">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_F4_SDIFType/Prsidd">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_F4_SUBTESTIDType/Spcid">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_I_PROTOCOLVHType/prsidd">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_PSGDVER_VHType/studyid">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_PSGDVER_VHType/sitecode">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_PSGDVER_VHType/patientid">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_RESPV_VHType/Guid">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.xRBXCRMxSM_SDIF_VER_VHType/StudyID">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_xrbxcrmxsm_sd_studyexecution.I_CountryVHType/Description">
+                <Annotation Term="UI.HiddenFilter"/>
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="_Entities"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

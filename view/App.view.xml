@@ -1,0 +1,7 @@
+<mvc:View controllerName="rbx.107.stuexe.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App id="app">
+    </App>
+</mvc:View>

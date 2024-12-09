@@ -1,0 +1,60 @@
+<mvc:View
+    xmlns:smartfield="sap.ui.comp.smartfield"
+    xmlns:smartform="sap.ui.comp.smartform"
+    controllerName="rbx.107.stuexe.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page>
+        <!-- <VBox id="store"/> -->
+
+        <!-- <VBox items="{/QuestionResponse}">
+        <items>
+        <smartform:SmartForm editable="true">
+        <smartform:Group
+        >
+        <smartform:GroupElement
+        >
+           <smartfield:SmartField value="{=${ResponseType}==='D'}?{Date1}:{Response}" textLabel="{Question}" />
+        </smartform:GroupElement>
+        </smartform:Group> 
+         </smartform:SmartForm>
+        </items>
+        </VBox> -->
+        <tnt:ToolPage id="toolPage">
+            <tnt:sideContent width="10%">
+                <tnt:SideNavigation
+                     id="idSideNav"
+                    selectedKey="{data>/iKey}"
+                    itemSelect="onItemSelect"
+                >
+                    <tnt:NavigationList>
+                          <tnt:NavigationListItem id="MenuId" key="toggle" icon="sap-icon://open-command-field" expanded="false" hasExpander="false" />
+                        <tnt:NavigationListItem
+                            key="home"
+                            text="Home"
+                        />
+
+                        <tnt:NavigationListItem
+                            key="data"
+                            text="Data"
+                        />
+                    </tnt:NavigationList>
+                </tnt:SideNavigation>
+            </tnt:sideContent>
+            <tnt:mainContents>
+             <NavContainer id="pageContainer" >
+                <pages>
+                    <Page id="home">
+                <Text text="this is home" />
+                </Page>
+                <Page id="data">
+                <Text text="this is data" />
+                </Page>
+                </pages>
+                </NavContainer>
+            </tnt:mainContents>
+        </tnt:ToolPage>
+    </Page>
+</mvc:View>
